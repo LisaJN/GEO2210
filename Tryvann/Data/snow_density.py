@@ -6,13 +6,22 @@ import matplotlib.pyplot as plt
 snow_density = pd.read_csv('snow_density.csv', header=0, names=['depth','density'])
 snow_density_2 = pd.read_csv('snow_density_2.csv', header=0, names=['depth','density'])
 
+# make plots pretty <3  
+plt.rcParams['figure.facecolor'] = 'white'
+plt.rcParams['axes.facecolor'] = 'whitesmoke'
 
 # Plot of snow density
-plt.plot(snow_density['density'],snow_density['depth'],'c')
-plt.plot(snow_density_2['density'],snow_density_2['depth'],'--')
-plt.xlabel('Density [kg/m^3]')
-plt.ylabel('Depth [cm]')
+fig = plt.figure()
+fig.supxlabel('Density [kg/m^3]')
+fig.supylabel('Depth [cm]')
+fig.suptitle('Density in snow pack')
+
+plt.subplot(1,2,2)
+plt.plot(snow_density['density'],snow_density['depth'],'c', label='Original')
 plt.grid()
-plt.legend(['Original','Comparison'])
-plt.title('Density in snow pack')
+plt.legend()
+plt.subplot(1,2,1)
+plt.plot(snow_density_2['density'],snow_density_2['depth'],'--', label='Comparison')
+plt.grid()
+plt.legend()
 plt.show()

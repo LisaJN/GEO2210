@@ -6,12 +6,22 @@ import matplotlib.pyplot as plt
 snow_temp = pd.read_csv("snow_temp.csv", header=0, names=['depth','temp'])
 snow_temp_2 = pd.read_csv("snow_temp_2.csv", header=0, names=['depth','temp'])
 
+# make plots pretty <3  
+plt.rcParams['figure.facecolor'] = 'white'
+plt.rcParams['axes.facecolor'] = 'whitesmoke'
+
 # Plot temperature profile
-plt.plot(snow_temp['temp'],snow_temp['depth'],'c')
-plt.plot(snow_temp_2['temp'],snow_temp_2['depth'],'--')
-plt.xlabel("Temperature")
-plt.ylabel("Depth")
+fig = plt.figure()
+fig.supxlabel('Temperature [C]')
+fig.supylabel('Depth [cm]')
+fig.suptitle('Temperature change in snow pack')
+
+plt.subplot(1,2,2)
+plt.plot(snow_temp['temp'],snow_temp['depth'],'c', label='Original')
 plt.grid()
-plt.legend(['Original','Comparison'])
-plt.title("Temperature as a fuction of depth")
+plt.legend()
+plt.subplot(1,2,1)
+plt.plot(snow_temp_2['temp'],snow_temp_2['depth'],'--', label='Comparison')
+plt.grid()
+plt.legend()
 plt.show()
