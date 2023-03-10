@@ -1,2 +1,3 @@
 # GEO2210
-It's just like whatever. 
+Reports and lab work in geomorphology spring 2023. 
+
