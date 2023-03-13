@@ -1,0 +1,166 @@
+\documentclass[eng]{ajceam-class}
+\usepackage[export]{adjustbox}
+\usepackage{float}
+\usepackage{amsmath, amssymb}
+%\usepackage{biblatex} %Imports biblatex package
+%\addbibresource{References.bib} %Import the bibliography file
+\usepackage[]{graphicx}
+\usepackage[]{hyperref}
+\usepackage[]{physics}
+\usepackage[]{listings}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage[]{subcaption}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\newcommand\todo[1]{\textcolor{red}{#1}}
+
+\lstset{ %
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+	basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=c++,                    % the language of the code
+	otherkeywords={*,...},           % if you want to add more keywords to the set
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=2,	                     % sets default tabsize to 2 spaces
+}
+
+\title{Tryvann field report}
+\shorttitle{March 2023}
+\cfoot{\thepage}
+       
+% Authors
+\author[1]{Lisa Julianne Nystad}
+\affil[1]{University of Oslo, Department of Geoscience, Norway}
+\firstauthor{Nystad}
+
+\newcommand{\vect}[1]{\mathbf{#1}}  % vectors
+
+\abstract{In this paper we will bla bla and the focus/purpose and final conclusion very short.}
+\thispagestyle{fancy}
+\begin{document}
+\maketitle
+\section{Introduction and Theory}
+\firstword{T}{he} goal of this project is to examine the properties and variability of snow cover by measuring the depth, density and stratigraphy. The data was collected at Tryvann on the 27th of February 2023 between 9:30-12:00 in the morning. The data sets, additional photos and figures can be found \href{https://github.com/LisaJN/GEO2210/tree/main/Tryvann}{\textbf{here}}, or by copying the link to the repository above. 
+Tryvann is at about 504 MOH, which means it gets colder there and the snow cover lasts longer than down in the city. The weather during the week before our trip had been somewhat turbulent as it had first rained, then snowed and then two days before our trip, been very sunny and warm. Therefore we expected some melting in the top cover of the snow pack. 
+\section{Study area}
+Transect coordinates: 
+\newline
+59.983152, 10.665676
+\newline
+59.983275, 10.665311
+\newline
+The weather that day was very good, it was sunny, with little to no wind and cloudless skies. 
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.5\textwidth, right]{area_3_OG_2.png}
+\caption{The area we chose to measure the transect. As seen in the photo it was surrounded by trees.} 
+\label{fig-1}
+\end{figure}
+The snow pit originally measured: 83cm, but the actual depth ended up being 62cm. This was due to the snow probe plunging straight through the soft grass under the snow. 
+\section{Method}
+\subsection*{Instruments}
+\begin{itemize}
+    \item Spatula
+    \item Measuring tape
+    \item Snow probe
+    \item Scale
+    \item Thermometer
+    \item plastic bag, w:2.5g
+    \item pen + paper
+    \item Shovel
+    \item Snow tube, l:19cm, d:6cm
+    \item Crystal card
+\end{itemize}
+\subsection*{Measurements}
+\subsubsection*{Transect \& snow pit}
+We chose a somewhat clear area and used the snow probe to test the depth and chose a place to start digging our snow pit. The profile we were measuring had to be away from the sun, and the snow behind needed to be as undisturbed as possible whilst we were executing the measurements. Then we walked 30m with a measuring tape and used the snow probe to measure depth for each 1m of the transect. 
+\subsubsection*{Temperature}
+Before conducting the temperature measurements we made a hypothesis of the profile in the snow pack. We thought that it would be coldest in the middle, and warmer at the top, and bottom (warmer closer to the ground than the top). 
+\newline
+We inserted the thermometer at the bottom of the snow pack and then measured with a 5cm interval to the top. 
+\subsubsection*{Density}
+For the density measurements we used the snow tube and inserted it vertically from the top down the snow pack until it was completely full. Then we used the spatula to lift it out and into the bag attached to the scale. 
+\begin{equation}
+    Density = \frac{Mass}{Volume}*1000
+\end{equation}
+\subsubsection*{Water equivalents???}
+\begin{equation}
+    SWE = \frac{1}{\rho _{water}}\int_{h=0}^{H} \rho _{snow} dh = \frac{\rho _{snow mean}}{\rho _{water}}H
+\end{equation}
+\subsubsection*{Stratigraphy}
+From the previous measurements we had divided the snow pack into clear layers and so we chose to take samples from each of these layers. We used the crystal card to measure the snow crystals from each layer in the snow pack. Each square on the card is $2mm^2$. 
+
+\section{Results}
+Include the following data analyses (the exact tasks may vary depending on the snow conditions):
+Snow depth: For each transect, estimate the average snow depth x, the standard deviation sx and coefficient of variation $C_v = \frac{s_x}{X}$. 
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.5\textwidth, right]{depth_distance.png}
+\caption{The difference in depth along our transect compared to another group in a less forested area.} 
+\label{fig-2}
+\end{figure}
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.5\textwidth, right]{temp.png}
+\caption{The difference in temperature in our snow pack compared to another group.} 
+\label{fig-3}
+\end{figure}
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.5\textwidth, right]{density.png}
+\caption{The difference in density in our snow pack compared to another group.} 
+\label{fig-4}
+\end{figure}
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.5\textwidth, right]{mwe.png}
+\caption{The difference in MWE in our snow pack compared to another group.} 
+\label{fig-5}
+\end{figure}
+Note: the three other figures are plotted in different plots due to the difference in depth of the snow pack. 
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.5\textwidth, right]{temp_ex.png}
+\caption{The temperature profile after a cold night plotted with the original temperature profile for comparison.} 
+\label{fig-6}
+\end{figure}
+Snow density:
+\begin{itemize}
+    \item or each sample compute the density = mass/volume. Compute volume from your measurements of the sampling device and express the density in $\frac{kg}{m^3}$. Compute the snow water equivalent SWE, which provides a measure of how much water the snowpack contains. SWE (in m w.e.) is
+    computed by integrating the snow density $\rho_snow$
+\end{itemize}
+\subsection*{transect}
+\subsection*{Snow pit}
+Here we insert the data collected at Tryvann. 
+\section{Discussion}
+Where in the snowpack is the most comfortable? The bottom as the middle layer is the coldest and the top layer is dependent on the weather conditions. The bottom layer however is more stable and warmer as the ground heats the layer from below and is not frozen.
+ Dette er pga varme fra bakken, pga ikke permafrost. Og ved toppen pga sola og ikke noe/lite vind. 
+Om natten kan det hende at det hadde vært kaldest ved toppen, men ikke akkurat nå når vi måler.
+More to discuss would be: 
+Normally we would have measured a transect before choosing where to dig the snow pit, however as er did not have access to a measuring tape until later, we had to just pick a seemingly good spot and start digging. We, of course, saw later that we ended up with one of the more shallow areas of the transect which is not necessarily ideal. 
+\section{Conclusion}
+In conclusion we can say that blah blah.. 
+\bibliographystyle{plain}
+\bibliography{References.bib}
+
+\end{document}
